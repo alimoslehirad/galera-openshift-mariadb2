@@ -4,7 +4,7 @@
 # openshift-mariadb-galera: Container entrypoint
 #
 
-# set -e
+set -e
 # set -x
 #
 # # Locations
@@ -35,3 +35,4 @@
 #
 # # Run mysqld
 # exec mysqld
+exec "$@"
